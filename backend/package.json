@@ -1,0 +1,27 @@
+{
+  "name": "memory-mail-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "bcrypto": "^5.5.2",
+    "cors": "^2.8.5",
+    "cron": "^3.2.1",
+    "dotenv": "^16.4.1",
+    "express": "^4.21.1",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.2",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.3"
+  }
+}

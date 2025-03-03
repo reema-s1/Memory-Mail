@@ -1,0 +1,118 @@
+/* General Styles */
+.register-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #190019, #2b124c); /* Dark Purple */
+    padding: 2rem;
+    font-family: 'Inter', sans-serif; /* Restored font-family */
+}
+
+/* Card */
+.register-card {
+    background-color: #ffffff; /* White */
+    padding: 2.5rem 2rem;
+    border-radius: 0.375rem; /* Rounded edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 440px; /* Slightly wider than login */
+    width: 100%;
+}
+
+/* Title */
+.register-title {
+    margin-top: 1rem;
+    font-size: 2.5rem; /* Adjusted font size */
+    font-weight: 700; /* Extrabold */
+    color: #190019; /* Pale Peach */
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+/* Form */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; /* Better spacing */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: 0.875rem; /* Small */
+    font-weight: 500; /* Medium */
+    color: #4b5563; /* Soft Pink */
+    margin-bottom: 0.5rem;
+}
+
+.input-field {
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db; /* Gray-300 */
+    border-radius: 0.5rem; /* Rounded edges */
+    font-size: 0.875rem; /* Small */
+    color:  #1f2937; /* Gray-900 */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #6366f1; /* Light Purple */
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5); /* Light Purple focus ring */
+}
+
+/* Error Message */
+.error-message {
+    background-color: #fee2e2; /* Red-100 */
+    color: #b91c1c; /* Red-700 */
+    padding: 0.75rem;
+    border-radius: 0.5rem; /* Rounded edges */
+    font-size: 0.875rem; /* Small */
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Button */
+.submit-button {
+    padding: 0.75rem 1rem;
+    background-color: #522b5b; /* Light Purple */
+    color: #fbe4d8; /* Pale Peach */
+    font-size: 0.875rem; /* Small */
+    font-weight: 600; /* Semi-bold */
+    border-radius: 0.5rem; /* Rounded edges */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #854f6c; /* Muted Purple */
+    transform: translateY(-2px);
+}
+
+.submit-button:focus {
+    outline: 2px solid #4338ca;
+    outline-offset: 2px; /* Light Purple focus ring */
+}
+
+/* Redirect */
+.redirect-message {
+    text-align: center;
+    font-size: 0.875rem; /* Small */
+    color: #2b124c; /* Pale Peach */
+}
+
+.redirect-link {
+    color: #854f6c; /* Light Purple */
+    font-weight: 600; /* Semi-bold */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.redirect-link:hover {
+    color: #522b5b; /* Muted Purple */
+}
+

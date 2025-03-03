@@ -1,0 +1,122 @@
+/* General Styles */
+.create-capsule-container {
+  font-family: 'Inter', sans-serif;
+  color: #fbe4d8; /* Light text color */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #190019, #2b124c); /* Dark purple gradient */
+  padding: 3rem 1rem;
+}
+
+.create-capsule-heading {
+  font-size: 3rem; /* Larger heading */
+  font-weight: 700;
+  color: #fbe4d8; /* Pale Peach text */
+  margin-bottom: 2rem; /* Increased margin */
+  text-align: center;
+  letter-spacing: 1px; /* Slight letter spacing for added elegance */
+}
+
+/* Form */
+.create-capsule-form {
+  background-color: #ffffff; /* White background for the form */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 3rem 2rem; /* Increased padding for larger form */
+  border-radius: 0.5rem; /* Slightly more rounded corners */
+  width: 100%;
+  max-width: 800px; /* Larger width */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Increased gap between form fields */
+}
+
+/* Form Field Styling */
+.form-group {
+  margin-bottom: 2rem; /* More space between form fields */
+}
+
+.form-label {
+  font-size: 2rem; /* Larger label text */
+  font-weight: 600; /* Slightly bolder labels */
+  color: #4b5563; /* Gray-700 */
+  margin-bottom: 0.75rem; /* Increased margin */
+}
+
+.form-input, .form-textarea {
+  width: 100%;
+  padding: 1rem 1.25rem; /* Larger padding for inputs */
+  border: 1px solid #d1d5db; /* Gray-300 border */
+  font-size: 1rem; /* Larger text inside inputs */
+  color: #1f2937; /* Darker text */
+  border-radius: 0.5rem; /* More rounded corners */
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
+.form-input:focus, .form-textarea:focus {
+  border-color: #6366f1; /* Indigo-500 */
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5); /* Indigo ring */
+}
+
+/* Textarea */
+.form-textarea {
+  resize: vertical; /* Allows user to resize textarea vertically */
+  min-height: 20rem; /* Minimum height for the textarea */
+}
+
+/* Error Message */
+.form-error {
+  background-color: #fef2f2; /* Light red background */
+  padding: 1rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+  color: #b91c1c; /* Red-700 */
+  font-size: 1rem; /* Larger error text */
+}
+
+/* Button Group */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem; /* Larger gap between buttons */
+}
+
+.form-button-cancel {
+  padding: 1rem 2rem; /* Larger padding for cancel button */
+  background-color: #6b7280; /* Gray-600 for cancel button */
+  color: #fbe4d8;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-button-cancel:hover {
+  background-color: #4b5563; /* Darker gray on hover */
+  transform: translateY(-2px);
+}
+
+.form-button-submit {
+  padding: 1rem 2rem; /* Larger padding for submit button */
+  background-color: #522b5b; /* Muted Purple */
+  color: #fbe4d8;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-button-submit:hover {
+  background-color: #854f6c; /* Lighter purple on hover */
+  transform: translateY(-2px);
+}
+
+.form-button-submit:focus {
+  outline: 2px solid #4338ca;
+  outline-offset: 2px;
+}

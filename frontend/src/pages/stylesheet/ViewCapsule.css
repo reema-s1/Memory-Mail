@@ -1,0 +1,48 @@
+.view-capsule-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .view-capsule-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .capsule-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .capsule-field {
+    font-size: 1.2rem;
+  }
+  
+  .capsule-field strong {
+    font-weight: bold;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .back-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  

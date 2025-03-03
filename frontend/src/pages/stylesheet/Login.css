@@ -1,0 +1,129 @@
+/* General Styles */
+.login-container {
+  font-family: 'Inter', sans-serif;
+  color: #fbe4d8;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #190019, #2b124c); /* Dark purple background */
+  padding: 3rem 1rem;
+}
+
+/* Card */
+.login-card {
+  max-width: 400px;
+  width: 100%;
+  background: #ffffff; /* White card background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-radius: 0.375rem;
+  text-align: center;
+}
+
+/* Header */
+.login-header {
+  margin-top: 1rem;
+  font-size: 2.5rem; /* Adjusted font size */
+  font-weight: 700; /* Extrabold */
+  color: #190019; /* Pale Peach */
+  margin-bottom: 1rem;
+}
+
+/* Error Message */
+.login-error {
+  background-color: #fef2f2; /* Light red background */
+  padding: 1rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+}
+
+.error-text {
+  font-size: 0.875rem; /* Small text */
+  color: #b91c1c; /* Red-700 */
+}
+
+/* Form and Input Fields */
+.login-form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-field-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-label {
+  font-size: 0.875rem; /* Small text */
+  font-weight: 500; /* Medium weight */
+  color: #4b5563; /* Gray-700 */
+  margin-bottom: 0.5rem;
+}
+
+.input-field {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db; /* Gray-300 border */
+  font-size: 0.875rem; /* Small text */
+  color: #1f2937; /* Gray-900 */
+  border-radius: 0.375rem;
+}
+
+.input-field:focus {
+  border-color: #6366f1; /* Indigo-500 */
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5); /* Indigo ring */
+}
+
+/* Button */
+.login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 0.875rem; /* Small text */
+  font-weight: 600; /* Medium weight */
+  text-transform: uppercase;
+  color: #fbe4d8; /* Pale Peach */
+  background-color: #522b5b; /* Muted Purple */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #854f6c; /* Lighter purple */
+  transform: translateY(-2px);
+}
+
+.login-button:focus {
+  outline: 2px solid #4338ca;
+  outline-offset: 2px;
+}
+
+/* Register Link */
+.register-link {
+  font-size: 0.875rem; /* Small text */
+  font-weight: 500; /* Medium weight */
+  color: #4f46e5; /* Indigo-600 */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.register-link:hover {
+  color: #4338ca; /* Indigo-700 */
+}
+

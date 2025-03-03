@@ -1,0 +1,34 @@
+.capsule-detail-page {
+    background-color: #4A148C;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  .capsule-content {
+    background-color: rgba(255,255,255,0.1);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .capsule-content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .capsule-content p {
+    margin-bottom: 20px;
+  }
+  
+  .capsule-message {
+    background-color: rgba(255,255,255,0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-style: italic;
+  }

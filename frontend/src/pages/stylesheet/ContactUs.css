@@ -1,0 +1,135 @@
+
+/* Container Styles */
+.contact-us-container {
+    width: 100%;
+    background: linear-gradient(to bottom, #190019, #2b124c); /* Dark purple gradient background */
+    padding: 2rem;
+    padding-left: 13rem;
+    padding-right: 13rem;
+    display: flex; /* Ensures the content takes the full height */
+    flex-direction: column; /* Stacks the sections vertically */
+    min-height: 100vh;
+}
+
+/* Header section */
+.contact-us-header {
+    text-align: center;
+    margin-bottom: 3rem; /* Increase the bottom margin */
+}
+
+.contact-us-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fbe4d8; /* White color */
+    margin-bottom: 0.75rem; /* Increase the bottom margin */
+}
+
+.contact-us-subtitle {
+    font-size: 1.125rem;
+    color: #dfb6b2; /* Soft pinkish color */
+    line-height: 1.6;
+}
+
+/* Creator section */
+.creator-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.creator-card {
+    background-color: #2b124c;
+    padding: 1.5rem;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.creator-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.creator-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fbe4d8;
+}
+
+.creator-role {
+    font-size: 1.125rem;
+    color: #dfb6b2;
+    margin-bottom: 0.75rem;
+}
+
+.creator-description {
+    font-size: 1rem;
+    color: #dfb6b2;
+    line-height: 1.6;
+}
+
+/* Social Links for Creators */
+.social-links {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Ensure icons are aligned vertically */
+    gap: 1.5rem; /* Increased space between icons */
+    margin-top: 1rem;
+}
+
+.social-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-icon {
+    width: 35px; /* Adjust size of the icons */
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Contact info section */
+.contact-info {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.contact-info-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fbe4d8;
+    margin-bottom: 1rem;
+}
+
+.contact-info-text {
+    font-size: 1.125rem;
+    color: #dfb6b2;
+    margin-bottom: 1rem;
+}
+
+.contact-info-github a {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #fbe4d8;
+    text-decoration: none;
+}
+
+.contact-info-github a:hover {
+    text-decoration: underline;
+    color: #4f46e5; /* Blue color for hover effect */
+}
+
+.contact-info-email,
+.contact-info-phone {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #fbe4d8;
+}

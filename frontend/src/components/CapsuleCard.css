@@ -1,0 +1,148 @@
+/* Capsule Card Styles */
+.capsule-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #190019; /* Dark purple */
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.capsule-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Section */
+.capsule-image-section {
+  position: relative;
+  height: 200px; /* Fixed height for images */
+  /* overflow: hidden; */
+}
+
+
+.capsule-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* This will make the image cover the area without stretching */
+  border-radius: 0.5rem;
+}
+
+.capsule-text {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: #fbe4d8; /* Pale peach */
+}
+
+.capsule-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.capsule-description {
+  font-size: 1rem;
+  opacity: 0.85; /* Slightly faded description */
+  margin: 0;
+}
+
+/* Details Section */
+.capsule-details {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Lock Status */
+.capsule-lock-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.capsule-lock-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #fbe4d8;
+}
+
+.capsule-lock-icon,
+.capsule-unlock-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #854f6c; /* Lighter purple */
+}
+
+.capsule-lock-text {
+  font-weight: 600;
+}
+
+.capsule-unlock-soon {
+  background-color: #854f6c; /* Lighter purple */
+  color: #fbe4d8; /* Pale peach */
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+}
+
+/* Unlock Date and Recipient Info */
+.capsule-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.capsule-date,
+.capsule-recipients {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #dfb6b2; /* Soft pink */
+}
+
+.capsule-calendar-icon,
+.capsule-users-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #854f6c; /* Lighter purple */
+}
+
+/* Actions: Delete */
+.capsule-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.capsule-delete-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #522b5b; /* Muted purple */
+  color: #fbe4d8; /* Pale peach */
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.capsule-delete-button:hover {
+  background-color: #854f6c; /* Lighter purple */
+  transform: translateY(-2px);
+}
+
+.capsule-delete-icon {
+  width: 1rem;
+  height: 1rem;
+  color: #fbe4d8; /* Pale peach */
+}

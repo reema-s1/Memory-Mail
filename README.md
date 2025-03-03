@@ -1,2 +1,2 @@
 # Memory-Mail
-yahoo
+A time capsule website built using MERN Stack

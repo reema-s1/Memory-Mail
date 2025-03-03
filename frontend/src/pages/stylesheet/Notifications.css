@@ -1,0 +1,166 @@
+/* General Styles */
+.notifications-container {
+  font-family: 'Inter', sans-serif;
+  color: #fbe4d8;
+  background: linear-gradient(to bottom, #190019, #2b124c); /* Dark purple background */
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+/* Title (Notifications) */
+.notifications-header h1 {
+  font-size: 2.5rem; /* Large title */
+  font-weight: 700; /* Bold title */
+  color: #fbe4d8; /* Pale peach color */
+  margin: 0;
+  position: absolute; /* Positioning the title absolutely */
+  left: 50%; /* Centers the title */
+  transform: translateX(-50%); /* Correct centering */
+}
+
+/* Buttons Container */
+.notifications-header div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem; /* Space between buttons */
+  margin-right: 0; /* Align buttons to the right */
+}
+button {
+  background-color: #522b5b; /* Muted purple */
+  color: #fbe4d8;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+}
+
+button:hover {
+  background-color: #854f6c; /* Lighter purple */
+  transform: translateY(-2px);
+}
+
+/* Error message */
+.error-message {
+  background-color: #fef2f2; /* Light red background */
+  color: #b91c1c; /* Red color */
+  padding: 1rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem; /* Slightly larger font */
+}
+
+/* Empty Notifications */
+.empty-notifications {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.empty-notifications .bell-icon {
+  background-image: url('/icons/bell.svg'); /* Bell icon */
+  background-size: cover;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.empty-notifications h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fbe4d8;
+}
+
+.empty-notifications p {
+  font-size: 1rem;
+  color: #fbe4d8;
+}
+
+/* Notification List */
+.notification-list {
+  margin-top: 2rem;
+}
+
+.notification-item {
+  background-color: #190019; /* Dark purple background */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.notification-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.notification-item.read {
+  background-color: transparent; /* Darker purple for read notifications */
+}
+
+.notification-item.unread {
+  background-color: #1a011a; /* Original purple for unread notifications */
+}
+
+.notification-content {
+  flex: 1;
+}
+
+.notification-content h3 {
+  font-size: 1.25rem;
+  color: #fbe4d8;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.notification-content p {
+  font-size: 1rem;
+  color: #dfb6b2; /* Light beige color */
+  margin-bottom: 0.5rem;
+}
+
+.notification-date {
+  font-size: 0.875rem;
+  color: #fbe4d8;
+  opacity: 0.7;
+}
+
+.mark-read-button {
+  background-color: #854f6c; /* Light purple */
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.375rem;
+  color: #fbe4d8;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.mark-read-button:hover {
+  background-color: #522b5b; /* Muted purple */
+  transform: translateY(-2px);
+}
+
+/* Mark All as Read and Delete All */
+.mark-all-button,
+.delete-all-button {
+  background-color: #522b5b; /* Muted purple */
+  color: #fbe4d8;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  margin-left: 1rem;
+}
+
+.mark-all-button:hover,
+.delete-all-button:hover {
+  background-color: #854f6c; /* Lighter purple */
+  transform: translateY(-2px);
+}
